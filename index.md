@@ -21,7 +21,9 @@ Thankfully it is quite simple to just utilise PyMySQL directly.
 For one reason or another, I sometimes run into the following error when trying to deploy an OpenStack TripleO overcloud in my lab:
 
 ```
-ClientException: Object GET failed: https://192.0.2.2:13808/v1/AUTH_1a5df8c242d848e8b01b974a72afcf8c/overcloud/plan-environment.yaml 404 Not Found
+ClientException: Object GET failed: https://192.0.2.2:13808/v1
+  /AUTH_1a5df8c242d848e8b01b974a72afcf8c
+  /overcloud/plan-environment.yaml 404 Not Found
 ```
 
 This usually occurs after impatiently cancelling an overcloud deployment – strongly not recommended of course. The overcloud plan, which is stored in a Swift container, is left missing one or more objects.
