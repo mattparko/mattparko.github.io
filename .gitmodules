@@ -1,0 +1,3 @@
+[submodule "liberty-workshop"]
+	path = liberty-workshop
+	url = https://github.com/mattparko/liberty-workshop
